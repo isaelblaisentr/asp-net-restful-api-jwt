@@ -30,15 +30,5 @@ namespace asp_net_restful_api_jwt.Controllers
             return user;
         }
 
-
-        [HttpPost("register")]
-        public async Task<ActionResult<User>> PostUser(User user)
-        {
-            _databaseContext.Users.Add(user);
-            await _databaseContext.SaveChangesAsync();
-
-            return CreatedAtAction(nameof(GetUser), new { id = user.Id }, user);
-        }
-
     }
 }

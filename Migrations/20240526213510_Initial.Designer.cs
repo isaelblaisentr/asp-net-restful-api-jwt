@@ -12,7 +12,7 @@ using asp_net_restful_api_jwt.Database;
 namespace asp_net_restful_api_jwt.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20240526164058_Initial")]
+    [Migration("20240526213510_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -49,6 +49,10 @@ namespace asp_net_restful_api_jwt.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Role")
                         .IsRequired()
                         .HasColumnType("text");
 
