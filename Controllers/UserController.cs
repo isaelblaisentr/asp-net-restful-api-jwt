@@ -1,8 +1,10 @@
 ﻿using asp_net_restful_api_jwt.Database;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace asp_net_restful_api_jwt.Controllers
 {
+    [Authorize]
     [Route("[controller]/[action]")]
     [ApiController]
     public class UserController : Controller
