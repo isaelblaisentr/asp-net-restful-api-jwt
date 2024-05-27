@@ -1,4 +1,6 @@
-﻿namespace asp_net_restful_api_jwt.Database
+﻿using System.Text.Json.Serialization;
+
+namespace asp_net_restful_api_jwt.Database
 {
     public class User
     {
@@ -7,6 +9,7 @@
         public string LastName { get; set; }
         public DateOnly? BirthDate { get; set; }
         public string Email { get; set; }
+        [JsonIgnore]
         public string Password { get; set; }
         public string Role { get; set; } = "Everyone";
 
