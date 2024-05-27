@@ -16,7 +16,6 @@ namespace asp_net_restful_api_jwt.Controllers
             _authenticationService = authenticationService;
         }
 
-        // POST: auth/login
         [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Login([FromBody] UserLogin user)
@@ -40,7 +39,6 @@ namespace asp_net_restful_api_jwt.Controllers
             return BadRequest(new { message = "User login failed!" });
         }
 
-        // POST: auth/register
         [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Register([FromBody] UserRegister user)
