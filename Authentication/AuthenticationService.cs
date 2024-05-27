@@ -51,6 +51,7 @@ namespace asp_net_restful_api_jwt.Authentication
 
             return new UserIdentity()
             {
+                Id = user.Id,
                 FirstName = user.FirstName,
                 LastName = user.LastName,
                 BirthDate = user.BirthDate,
@@ -68,6 +69,7 @@ namespace asp_net_restful_api_jwt.Authentication
 
             return new UserIdentity()
             {
+                Id = user.Id,
                 FirstName = user.FirstName,
                 LastName = user.LastName,
                 BirthDate = user.BirthDate,
