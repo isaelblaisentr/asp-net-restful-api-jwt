@@ -3,8 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace asp_net_restful_api_jwt.Controllers
 {
+    [Route("[controller]/[action]")]
     [ApiController]
-    [Route("users")]
     public class UserController : Controller
     {
         private readonly DatabaseContext _databaseContext;
