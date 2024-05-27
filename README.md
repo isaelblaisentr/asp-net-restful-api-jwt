@@ -46,7 +46,7 @@ The `AuthenticationController` Contains login and register for users.
 
         ```json
         {
-            "id": 0,
+            "id": 1,
             "firstName": "Simple",
             "lastName": "Test",
             "birthDate": null,
@@ -76,7 +76,7 @@ The `AuthenticationController` Contains login and register for users.
 
         ```json
         {
-            "id": 0,
+            "id": 1,
             "firstName": "Simple",
             "lastName": "Test",
             "birthDate": null,
