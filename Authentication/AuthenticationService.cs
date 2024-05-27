@@ -54,7 +54,7 @@ namespace asp_net_restful_api_jwt.Authentication
                 FirstName = user.FirstName,
                 LastName = user.LastName,
                 BirthDate = user.BirthDate,
-                Email = user.FirstName,
+                Email = user.Email,
                 Role = user.Role,
                 Token = tokenHandler.WriteToken(userToken)
             };
@@ -71,7 +71,7 @@ namespace asp_net_restful_api_jwt.Authentication
                 FirstName = user.FirstName,
                 LastName = user.LastName,
                 BirthDate = user.BirthDate,
-                Email = user.FirstName,
+                Email = user.Email,
                 Role = user.Role,
             };
         }
